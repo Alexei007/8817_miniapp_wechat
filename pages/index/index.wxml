@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="search-wrap" bindtap='selectLocation'>
+        <view class="search-text">{{searchTitle}}</view>
+    </view>
+    <image hidden="{{hideCloseBtn}}" bindtap="clearSelLocation" class="close-btn" src="/images/close.png"></image>
+
+    <cover-view class="data-desc" bindtap="showMsg">
+        <cover-image class="question-mark" src="/images/question_mark.png"></cover-image>
+        <cover-view class="data-desc-text">{{config.data_statement.title?  config.data_statement.title: '数据说明'}}</cover-view>
+    </cover-view>
+
+    <map bindregionchange="mapRegionChange" id="map" show-location="true" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" markers="{{markers}}" circles="{{cirles}}"></map>
+
+    <cover-view class="cover-view" bindtap='jump2ListPage'>
+        <cover-view class="btn-text btn-text-1">全国</cover-view>
+        <cover-view class="btn-text btn-text-2">疫情</cover-view>
+        <!-- <cover-image src="/images/fight.png"></cover-image> -->
+    </cover-view>
+
+    <cover-view class="cover-view-2" bindtap='locationReset'>
+        <cover-image src="/images/et-location.png"></cover-image>
+    </cover-view>
+
+    <cover-view class="cover-view-3">
+        <button class="cover-view-3-buttton" open-type="share" title="分享" hover-class="none">
+            <cover-image src="/images/share.png"></cover-image>
+        </button>
+    </cover-view>
+
+    <cover-view class="cover-view-4">
+        <cover-image bindtap="pMap" class="p-btn" src="{{pImgSrc}}"></cover-image>
+        <cover-image bindtap="eMap" class="e-btn" src="{{eImgSrc}}"></cover-image>
+    </cover-view>
+
+
+    <cover-view bindtap="hideMsg" class="dark-wrap" hidden="{{hideMsg}}"></cover-view>
+    <cover-view class="msg-wrap" hidden="{{hideMsg}}">
+        <cover-view class="msg-top" style="{{config.data_statement.style.title}}">
+            {{config.data_statement.title}}
+            <cover-image bindtap="hideMsg" class="msg-close-btn" src="/images/close.png"></cover-image>
+        </cover-view>
+
+        <cover-view style="{{config.data_statement.style.content}}" class="msg-text" wx:for="{{config.data_statement.data}}" wx:key="l_key" wx:for-index="idx" wx:for-item="item">{{item}}</cover-view>
+    </cover-view>
+</view>

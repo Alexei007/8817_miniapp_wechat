@@ -1,0 +1,46 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/list/list",
+        "pages/resist/resist",
+        "pages/mine/mine"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "8817",
+        "navigationBarTextStyle": "black"
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "您的位置信息将用于小程序确定您的位置信息。"
+        }
+    },
+    "tabBar": {
+        "color": "#3a3a3a",
+        "selectedColor": "#FF5252",
+        "borderStyle": "black",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "images/location_3a.png",
+                "selectedIconPath": "images/location.png",
+                "text": "地图"
+            },
+            {
+                "pagePath": "pages/resist/resist",
+                "iconPath": "images/fight_3a.png",
+                "selectedIconPath": "images/fight.png",
+                "text": "抗击肺炎"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "iconPath": "images/about_us_3a.png",
+                "selectedIconPath": "images/about_us.png",
+                "text": "关于我们"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

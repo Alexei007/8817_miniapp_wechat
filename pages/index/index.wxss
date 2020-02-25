@@ -1,0 +1,245 @@
+.search-wrap
+{
+    position: absolute;
+    width: 94%;
+    height: 80rpx;
+    line-height: 80rpx;
+    top: 30rpx;
+    left: 3%;
+    background: #fff;
+    z-index: 1000;
+    border: 2rpx solid #ccc;
+    color: #8a8a8a;
+    letter-spacing: 4rpx;
+    border-radius: 10rpx;
+}
+
+.close-btn
+{
+    position: absolute;
+    right: 6%;
+    top: 52rpx;
+    width: 40rpx;
+    height: 40rpx;
+    z-index: 1001;
+}
+
+.search-text
+{
+    padding-left: 20rpx;
+    width: 88%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+#map
+{
+    width: 100%; 
+    height: 100%;
+}
+
+.cover-view
+{
+    position: fixed;
+    left: 31rpx;
+    bottom: 60rpx;
+    z-index: 1000;
+    height: 96rpx;
+    width: 96rpx;
+    background: #fff;
+    border-radius: 50%;
+    border: 2rpx solid #FFEBEE;
+    outline: none;
+}
+
+.btn-text
+{
+    font-size: 28rpx;
+    font-weight: bold;
+    letter-spacing: 4rpx;
+    margin: auto;
+    text-align: center;
+    color: #FF5252;
+    position: absolute;
+}
+
+.btn-text-1
+{
+    top: 16rpx;
+    left: 18rpx;
+}
+
+.btn-text-2
+{
+    bottom: 16rpx;
+    left: 18rpx;
+}
+
+.cover-view-3
+{
+    position: fixed;
+    left: 31rpx;
+    bottom: 180rpx;
+    z-index: 1000;
+    height: 96rpx;
+    width: 96rpx;
+    background: #fff;
+    border-radius: 50%;
+    border: 2rpx solid #eee;
+    outline: none;
+}
+
+.cover-view-3-buttton
+{
+    width: 100%;
+    height: 100%;
+    padding: 0!important;
+    margin: 0!important;
+    background-color: #fff!important;
+}
+
+.cover-view-2
+{
+    position: fixed;
+    right: 26rpx;
+    bottom: 60rpx;
+    z-index: 1000;
+    height: 100rpx;
+    width: 100rpx;
+    background: #fff;
+    border-radius: 50%;
+    border: 2rpx solid #eee;
+    box-shadow: 0 0 16rpx #eee;
+}
+
+.cover-view-4
+{
+    position: fixed;
+    right: 40rpx;
+    bottom: 260rpx;
+    z-index: 1000;
+    height: 150rpx;
+    width: 70rpx;
+    background: #fff;
+    border-radius: 100rpx;
+    border: 2rpx solid #eee;
+    box-shadow: 0 0 16rpx #eee;
+}
+
+.cover-view-4 cover-image
+{
+    width: 50rpx;
+    height: 50rpx;
+    margin: 0;
+}
+
+.p-btn, .e-btn
+{
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+    left: 10rpx;
+}
+
+.p-btn
+{
+    top: 16rpx;
+}
+
+.e-btn
+{
+    bottom: 12rpx;
+}
+
+cover-image
+{
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+}
+
+.data-desc
+{
+    position: absolute;
+    right: 0;
+    top: 150rpx;
+    z-index: 1000;
+    background: #fff;
+    border: 2rpx solid #dadada;
+    border-right: 0;
+    color: #666;
+    padding: 6rpx 0 6rpx 10rpx;
+    letter-spacing: 2rpx;
+}
+
+.data-desc .question-mark
+{
+    display: inline-block;
+    vertical-align: middle;
+    height: 28rpx;
+    width: 28rpx;
+    margin: 0rpx 4rpx 2rpx 0;
+}
+
+.data-desc-text
+{
+    display: inline-block;
+    font-size: 0.8rem;
+    vertical-align: middle;
+}
+
+.dark-wrap
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1002;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.msg-wrap
+{
+    position: fixed;
+    top: 26%;
+    left: 10%;
+    z-index: 1005;
+    width: 80%;
+    /* height: 500rpx; */
+    background: #fff;
+    border: 2rpx solid #eee;
+    border-radius: 20rpx;
+    padding-bottom: 20rpx;
+}
+
+.msg-top
+{
+    height: 120rpx;
+    line-height: 120rpx;
+    position: relative;
+    font-size: 1.4rem;
+    letter-spacing: 2rpx;
+    padding-left: 40rpx;
+}
+
+.msg-top .msg-close-btn
+{
+    position: absolute;
+    right: 40rpx;
+    top: 36rpx;
+    width: 44rpx;
+    height: 44rpx;
+    z-index: 1010;
+    margin: 0;
+}
+.msg-text
+{
+    white-space:pre-wrap;
+    display: block;
+    padding: 20rpx 40rpx;
+    line-height: 1.6rem;
+    letter-spacing: 2rpx;
+    list-style-type: armenian;
+}

@@ -1,0 +1,23 @@
+<view class="page">
+    <web-view src="{{webUrl}}"></web-view>
+    <!-- <view class="top_wrap">
+        <image src='/images/zzcc.png'></image>
+        <view>志愿者建设中...</view>
+    </view>
+
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__section">
+                <view class="weui-article__h3">抗击疫情故事：</view>
+                <view class="weui-article__p">
+                    作为一个孩子的母亲，特别关注感染病情的孩子，在分析深圳疫情数据发现一个案例【深圳一儿童病例6岁1月8日随爷爷奶奶回湖北，1月22日爸爸开车回湖北将爷爷奶奶儿子接回深圳，回到深圳后全家出现症状，均被确诊】从国家防控角度我们不建议这样做，因为会传播疫情，但从家庭责任来说，首先作为父亲、儿子的他是值得被尊敬的。
+                </view>
+
+                <view class="weui-article__p">
+                    隔离病毒，不隔离爱，呼吁大家一起为中国加油！
+                </view>
+            </view>
+
+        </view>
+    </view> -->
+</view>

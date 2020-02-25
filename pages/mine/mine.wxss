@@ -1,0 +1,18 @@
+.page
+{
+    background-image: linear-gradient(#fafafa, #fff);
+}
+
+.title-wrap
+{
+    font-size: 1.2rem;
+    color: #3a3a3a;
+    letter-spacing: 2rpx;
+}
+
+.content-wrap
+{
+    font-size: 1rem;
+    color: #666;
+    letter-spacing: 2rpx;
+}

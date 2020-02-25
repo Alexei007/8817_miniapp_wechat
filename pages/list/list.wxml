@@ -1,0 +1,45 @@
+<view class="container">
+    <view class="city-select-wrap">
+        <picker class="city-text" bindchange="cityChange" value="{{index}}" range="{{cityList}}">
+            <!-- <view class="city-text-limit"></view> -->
+            {{currentCityName}}
+            [<image src="/images/down_3a.png"></image>切换]
+        </picker>
+        
+        <view class="data-desc" bindtap="showMsg">
+            <image class="question-mark" src="/images/question_mark.png"></image>
+            <view class="data-desc-text">{{config.data_statement.title?  config.data_statement.title: '数据说明'}}</view>
+        </view>
+    </view>
+    <view class="clear-wrap-fix"></view>
+
+    <view class="page__bd" wx:for="{{list}}" wx:key="l_key" wx:for-index="idx" wx:for-item="item">
+        <view class="area_text" bindtap="hideAreaListFunc" data-value="{{idx}}">
+            {{item.area_name}}
+            <view style='display: inline-block;' data-value="{{idx}}">({{item.case_num}})</view>
+            <image class="sign_pic" src="{{item.sign_pic}}" data-value="{{idx}}"></image>
+        </view>
+        <view class="weui-cells" style='margin-top: 0' hidden="{{item.hideAreaList}}">
+            <view data-lat='{{i.latitude}}' data-lng='{{i.longitude}}' data-title="{{i.village_name}}" bindtap='jump2MapPage' wx:for="{{item.village_list}}" wx:key="key" wx:for-item="i" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view data-lat='{{i.latitude}}' data-lng='{{i.longitude}}' data-title="{{i.village_name}}" class="weui-cell__bd">
+                    {{i.village_name}}
+                    <!-- <view style='color: #FF5252; display: inline-block;'>（{{i.case_num}} 个）</view> -->
+                </view>
+                <view data-lat='{{i.latitude}}' data-lng='{{i.longitude}}' data-title="{{i.village_name}}" class="weui-cell__ft weui-cell__ft_in-access">
+                    {{i.distance_text}}
+                    <!-- <view style="color: #3F51B5">{{i.update_time}}</view> -->
+                </view>
+            </view>
+
+        </view>
+    </view>
+
+    <view bindtap="hideMsg" class="dark-wrap" hidden="{{hideMsg}}"></view>
+    <view class="msg-wrap" hidden="{{hideMsg}}">
+        <view class="msg-top" style="{{config.data_statement.style.title}}">
+            {{config.data_statement.title}}
+            <image bindtap="hideMsg" class="msg-close-btn" src="/images/close.png"></image>
+        </view>
+        <view style="{{config.data_statement.style.content}}" class="msg-text" wx:for="{{config.data_statement.data}}" wx:key="l_key" wx:for-index="idx" wx:for-item="item">{{item}}</view>
+    </view>
+</view>

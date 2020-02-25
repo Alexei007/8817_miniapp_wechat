@@ -1,0 +1,18 @@
+<view class="page" style="{{config.about_us.style.page}}">
+    <view class="page__bd article-wrap">
+        <view class="weui-article">
+
+            <view class="weui-article__section" wx:for="{{config.about_us.list}}" wx:key="l_key" wx:for-index="idx" wx:for-item="item">
+                <view class="weui-article__h3 title-wrap" style="{{config.about_us.style.title}}">{{item.title}}</view>
+                <view class="weui-article__p content-wrap" style="{{config.about_us.style.content}}">{{item.content}}</view>
+            </view>
+
+            <view class="weui-article__section" hidden="{{config.about_us.is_hide_btn}}">
+                <view class="weui-article__p">
+                    <button bindtap="contactUs" class="weui-btn" type="primary" style="margin-top: 60rpx; background-color: #FF5252; letter-spacing: 4rpx;">获取二维码</button>
+                </view>
+            </view>
+
+        </view>
+    </view>
+</view>
